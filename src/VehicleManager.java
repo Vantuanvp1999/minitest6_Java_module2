@@ -4,8 +4,13 @@ import java.util.Comparator;
 import java.util.LinkedList;
 
 public class VehicleManager {
-    private ArrayList<Vehicle> vehicles= new ArrayList<>();
-    private LinkedList<String> operationHistory= new LinkedList<>();
+    private ArrayList<Vehicle> vehicles;
+    private LinkedList<String> operationHistory;
+
+    public VehicleManager() {
+        vehicles = new ArrayList<>();
+        operationHistory = new LinkedList<>();
+    }
 
     public void addVehicle(Vehicle vehicle) {
         vehicles.add(vehicle);
